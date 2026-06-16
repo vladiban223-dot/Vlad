@@ -34,13 +34,4 @@ def calculator():
                     continue
                 result = num1 / num2
             else:
-                print(f"Ошибка: Оператор '{operator}' не поддерживается.")
-                continue
-                
-            print(f"Результат: {result}\n")
-            
-        except ValueError:
-            print("Ошибка: Пожалуйста, вводите только числа!")
-
-if __name__ == "__main__":
-    calculator()
+                print(f"Ошибка: Оператор '{operator}' не поддерж
