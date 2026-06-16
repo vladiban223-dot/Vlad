@@ -1,6 +1,57 @@
+# Ignore assets directory but keep its .gitignore
 assets/*
 !assets/.gitignore
+
+# Runtime (keep .gitignore inside so the folder stays in repo)
 protected/runtime/*
 !protected/runtime/.gitignore
+
+# Database files created by the app
 protected/data/*.db
+# Also ignore common sqlite files
+*.sqlite
+*.sqlite3
+
+# Ignore theme compiled views
 themes/classic/views/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE directories and files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Node/npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# PHP / Composer
+/vendor/
+# Keep composer.lock in VCS for reproducible installs (do not ignore)
+
+# Build / distribution
+dist/
+build/
+public/build/
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.*.local
+
+# Other
+*.cache
+coverage/
+
+# Keep track of files intentionally committed with a .gitignore inside the folder
+# (already handled above for assets and protected/runtime)
